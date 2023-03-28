@@ -1,0 +1,167 @@
+/* Default styles */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+  }
+  
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("/images/nature.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .intro-header {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .green {
+    color: #00ff00;
+  }
+  
+  .intro-p {
+    max-width: 50%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .book-btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .about-text {
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  .about-text h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  .adventure {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .pricing-header {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .packages {
+    color: #00ff00;
+  }
+  
+  .pricing-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .boxes {
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 3px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .starter,
+  .standard,
+  .pro {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .order-btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+  

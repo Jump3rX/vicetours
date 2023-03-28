@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shalimar&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  /* width: 100%;
+  height: 65px; */
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* align-items: center;
+  justify-content: space-around; */
+}
+
+nav li {
+  margin-right: 1rem;
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.brand {
+  font-family: "Great Vibes", cursive;
+  font-size: 35px;
+  color: white;
+  margin-top: 10px;
+  border: 2px solid white;
+  padding-top: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.intro {
+  background-image: url("/images/mountain.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+
+.intro-inner {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.intro-header {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.intro-paragraph {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.green {
+  color: green;
+  font-style: italic;
+  border-bottom: 1px solid green;
+  font-family: "Pacifico", cursive;
+}
+
+.book-btn {
+  background: transparent;
+  color: green;
+  border-radius: 13px;
+  padding: 8px;
+  margin-top: 20px;
+  border: 1px solid green;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  transition: 0.2s ease-in-out 0s;
+}
+
+a.book-btn:hover {
+  background-color: green;
+  color: white;
+  transform: scale(1.2);
+}
+
+.header-part {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+.about {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 40vh;
+  font-size: 1.2rem;
+  background-color: white;
+  padding-top: 70px;
+}
+
+.about-text {
+  margin-left: 5%;
+}
+
+.adventure {
+  height: 300px;
+  width: 400px;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.pricing-header {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.starter,
+.standard,
+.pro {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.pricing {
+  margin-top: 100px;
+  background-color: #ded2a8;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.pricing-container ul li {
+  margin: 20px;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+.pricing-container ul li:hover {
+  text-decoration: underline;
+}
+
+span.packages,
+span.know-more {
+  color: green;
+  font-style: italic;
+  border-bottom: 1px solid green;
+  font-family: "Pacifico", cursive;
+}
+
+a.order-btn {
+  background: transparent;
+  color: green;
+  border-radius: 13px;
+  padding: 8px;
+  border: 1px solid green;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  transition: 0.2s ease-in-out 0s;
+}
+
+a.order-btn:hover {
+  background-color: green;
+  color: white;
+  transform: scale(1.2);
+  text-decoration: none;
+}
+
+.contact {
+  background-color: white;
+  text-align: center;
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+h4.contact-header {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  background-color: white;
+}
+
+img.contact-vector {
+  height: 400px;
+  width: 500px;
+}
+
+.form-input {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px;
+  margin: 5px;
+  width: 25rem;
+}
+
+.form-btn {
+  background: transparent;
+  color: green;
+  border-radius: 13px;
+  padding: 8px;
+  border: 1px solid green;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  transition: 0.2s ease-in-out 0s;
+  width: 30%;
+}
+
+.form-btn:hover {
+  background-color: green;
+  color: white;
+  transform: scale(1.2);
+  text-decoration: none;
+}
+
+p.write {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+}
+
+.footer {
+  background-color: #a9e1fc;
+  text-align: center;
+  padding: 45px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+a.gen-studios {
+  font-family: "Shalimar", cursive;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #e91e63;
+}
+
+a.gen-studios:hover {
+  border-bottom: 2px solid #e91e63;
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .intro {
+    width: 100vw;
+  }
+  .pricing-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .pricing {
+    padding-top: 280px;
+  }
+  .about {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 40vh;
+    font-size: 18px;
+    background-color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .boxes {
+    padding-bottom: 15px;
+    font-size: 1rem;
+  }
+  .contact {
+    background-color: white;
+    text-align: center;
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .starter,
+  .standard,
+  .pro {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+/* Media query for devices with a maximum width of 768px (e.g. most tablets) */
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets */
+  /* ... */
+}
+@media (max-width: 900px) {
+  .intro {
+    width: 100vw;
+  }
+  .pricing-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .pricing {
+    padding-top: 280px;
+  }
+  .about {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 40vh;
+    font-size: 18px;
+    background-color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .boxes {
+    padding-bottom: 15px;
+    font-size: 1rem;
+  }
+  .contact {
+    background-color: white;
+    text-align: center;
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .starter,
+  .standard,
+  .pro {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
