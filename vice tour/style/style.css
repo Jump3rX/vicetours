@@ -29,8 +29,9 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  /* align-items: center;
-  justify-content: space-around; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  gap: 1rem;
 }
 
 nav li {
@@ -43,10 +44,13 @@ nav a {
   padding: 0.5rem;
   color: white;
   font-family: "Quicksand", sans-serif;
+  transition: all ease-in-out .5s;
+  cursor: pointer;
 }
 
 nav ul li a:hover {
   border-bottom: 2px solid white;
+  transition: all ease-in-out .5s;
 }
 
 .brand {
@@ -91,6 +95,8 @@ nav ul li a:hover {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
   color: white;
+  text-align: center;
+  font-weight: bold;
 }
 .green {
   color: green;
@@ -248,6 +254,7 @@ img.contact-vector {
   font-family: "Quicksand", sans-serif;
   transition: 0.2s ease-in-out 0s;
   width: 30%;
+  margin-bottom: 10px;
 }
 
 .form-btn:hover {
@@ -281,53 +288,9 @@ a.gen-studios {
 a.gen-studios:hover {
   border-bottom: 2px solid #e91e63;
 }
-@media only screen and (min-width: 360px) and (max-width: 480px) {
-  .intro {
-    width: 100vw;
-  }
-  .pricing-container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .pricing {
-    padding-top: 280px;
-  }
-  .about {
-    font-family: "Quicksand", sans-serif;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 40vh;
-    font-size: 18px;
-    background-color: white;
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .boxes {
-    padding-bottom: 15px;
-    font-size: 1rem;
-  }
-  .contact {
-    background-color: white;
-    text-align: center;
-    padding-top: 15px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .starter,
-  .standard,
-  .pro {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-}
 
-/* Media query for devices with a maximum width of 768px (e.g. most tablets) */
-@media only screen and (max-width: 768px) {
-  /* Styles for tablets */
-  /* ... */
-}
+
+
 @media (max-width: 900px) {
   .intro {
     width: 100vw;
@@ -358,8 +321,76 @@ a.gen-studios:hover {
     background-color: white;
     text-align: center;
     padding-top: 15px;
+    display: block;
+    /* grid-template-columns: 1fr; */
+  }
+  .form-input {
+    width: 70%;
+  }
+  .starter,
+  .standard,
+  .pro {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+/* Media query for devices with a maximum width of 768px (e.g. most tablets) */
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets */
+  /* ... */
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+   /* nav ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+   }
+   nav ul li{
+    font-size: 14pt;
+    font-weight: bold;
+    display: none;
+   } */
+   
+  .intro {
+    width: 100vw;
+  }
+  .pricing-container {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .pricing {
+    padding-top: 280px;
+  }
+  .about {
+    font-family: "Quicksand", sans-serif;
+    text-align: justify;
+    display: block;
+    /* grid-template-columns: 1fr; */
+    height: 40vh;
+    font-size: 18px;
+    background-color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-right: 1rem;
+    }
+  .boxes {
+    padding-bottom: 15px;
+    font-size: 1rem;
+  }
+  .contact {
+    background-color: white;
+    text-align: center;
+    padding-top: 15px;
+    display: block;
+    /* grid-template-columns: 1fr; */
+  }
+  .form-input {
+    width: 90%;
   }
   .starter,
   .standard,
