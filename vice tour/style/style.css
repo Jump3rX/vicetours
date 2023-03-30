@@ -222,6 +222,11 @@ a.order-btn:hover {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
+.contact-form{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
 h4.contact-header {
   font-family: "Quicksand", sans-serif;
@@ -234,6 +239,14 @@ img.contact-vector {
   height: 400px;
   width: 500px;
 }
+
+
+/* .card-fail{
+  background-color: rgb(255, 38, 0);
+  padding: .01rem;
+  color: wheat;
+  font-size:1.2rem;  
+} */
 
 .form-input {
   font-family: "Quicksand", sans-serif;
@@ -324,9 +337,9 @@ a.gen-studios:hover {
     display: block;
     /* grid-template-columns: 1fr; */
   }
-  .form-input {
+  /* .form-input {
     width: 70%;
-  }
+  } */
   .starter,
   .standard,
   .pro {
@@ -390,7 +403,7 @@ a.gen-studios:hover {
     /* grid-template-columns: 1fr; */
   }
   .form-input {
-    width: 90%;
+    width: 100%;
   }
   .starter,
   .standard,
